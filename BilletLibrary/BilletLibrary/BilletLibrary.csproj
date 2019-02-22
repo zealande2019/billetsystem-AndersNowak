@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="C:\Users\Anders\Documents\GitHub\billetsystem-AndersNowak\Køretøj.cs" Link="Køretøj.cs" />
+  </ItemGroup>
+
+</Project>
