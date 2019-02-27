@@ -6,7 +6,7 @@ namespace BilletLibrary
 {
     public abstract class Køretøj
     {
-        private string _nummerplade;
+        protected string _nummerplade;
 
         public DateTime Dato { get; set; }
 
@@ -14,31 +14,22 @@ namespace BilletLibrary
 
         public string NummerPlade
         {
-            get
+            get => _nummerplade;
+            set
             {
                 if (_nummerplade.Length > 7)
                 {
                     throw new Exception("Nummerpladen kan ikke være længere end 7 tegn");
                 }
-                else
-                {
-                    return _nummerplade;
-                }
+
             }
-            set { _nummerplade = value; }
         }
 
-        public abstract decimal Pris();
+        public abstract double Pris();
 
         public abstract string KøretøjsType();
 
-        public Køretøj(string nummerplade, DateTime dato)
-        {
-            _nummerplade = nummerplade;
-            Dato = dato;
-            BroBizz = false;
-            
-        }
+        
 
 
         

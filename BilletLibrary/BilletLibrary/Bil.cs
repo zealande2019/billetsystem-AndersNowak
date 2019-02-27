@@ -1,15 +1,17 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Text;
 
 namespace BilletLibrary
 {
     public class Bil : Køretøj
     {
 
-        public override decimal Pris()
+        public override double Pris()
         {
             if (BroBizz == true)
             {
-                return 240 * 0.05M;
+                return 240 * 0.95;
             }
             return 240;
         }
@@ -19,12 +21,7 @@ namespace BilletLibrary
             return "Bil";
         }
 
-        public Bil(string nummerplade, DateTime dato)
-            : base(nummerplade, dato)
-        {
-            nummerplade = NummerPlade;
-            Dato = dato;
-        }
+        
 
     }
 }

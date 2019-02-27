@@ -6,11 +6,11 @@ namespace BilletLibrary
 {
     public class MC : Køretøj
     {
-        public override decimal Pris()
+        public override double Pris()
         {
             if (BroBizz == true)
             {
-                return 125 * 0.05M;
+                return 125 * 0.95;
             }
             return 125;
         }
@@ -20,11 +20,6 @@ namespace BilletLibrary
             return "MC";
         }
 
-        public MC(string nummerplade, DateTime dato)
-            :base(nummerplade, dato)
-        {
-            nummerplade = NummerPlade;
-            Dato = dato;
-        }
+        
     }
 }
